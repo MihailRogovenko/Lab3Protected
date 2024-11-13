@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Restaurant Management</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <div class="container" style="text-align: center">
+      <a href="https://github.com/MihailRogovenko" target="_blank">
+        <img
+          src="https://avatars.githubusercontent.com/u/181931282?v=4"
+          alt="My Avatar"
+          class="avatar"
+        />
+      </a>
+
+      <h1>Welcome to my project</h1>
+      <h2>
+        This project is about using a database in a web application in Java.
+      </h2>
+      <h3>Manage your restaurant's data easily with this web app.</h3>
+
+      <div class="navigation">
+        <a th:href="@{/curators}" class="button">Curators</a>
+        <a th:href="@{/groups}" class="button">Groups</a>
+        <a th:href="@{/students}" class="button">Students</a>
+      </div>
+    </div>
+  </body>
+</html>
