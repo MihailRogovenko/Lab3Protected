@@ -20,7 +20,10 @@ public class Curators {
     @NotBlank
     private String department;
 
-    // Corrected getter and setter methods
+    @OneToOne(mappedBy = "curator", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Groups group;
+
+    // Getters and Setters
     public Integer getCuratorId() {
         return curatorId;
     }
@@ -52,5 +55,12 @@ public class Curators {
     public void setDepartment(String department) {
         this.department = department;
     }
-}
 
+    public Groups getGroup() {
+        return group;
+    }
+
+    public void setGroup(Groups group) {
+        this.group = group;
+    }
+}
